@@ -1,4 +1,3 @@
-
 $('#cp_submit').submit(function (e) {
     e.preventDefault();
     $.ajax({
@@ -9,8 +8,16 @@ $('#cp_submit').submit(function (e) {
             _token: $('meta[name="csrf-token"]').attr('content')
         },
         dataType: 'JSON',
-        success: function() {
-            console.log("Geodata sent");
+        success: function(res) {
+            $('.content-loaded').removeClass('d-none');
+            $('#position_name span').html(res.name);
+            $('#temp_max span').html(res.main.temp_max+' ºC');
+            $('#temp_min span').html(res.main.temp_min+' ºC');
+            $('#tiempo span').html(res.weather[0].main);
+            $('#tiempo img').attr('src','http://openweathermap.org/img/wn/'+res.weather[0].icon+'.png');
+            $('#wind_speed span').html(res.wind.speed+' m/s');
+            $('#wind_direction span').html(res.wind.deg+' º');
+
         }
     })
 });

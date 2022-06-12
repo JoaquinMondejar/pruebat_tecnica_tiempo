@@ -21,8 +21,14 @@
                 <input type="number" min="0" id="cp_input" name="cp_number" class="form-control" placeholder="Introduce su código postal" required="" autofocus="">
 
 
-                <div class="content-loaded"></div>
-
+                <div class="content-loaded d-none">
+                    <p id="position_name">Lugar: <span></span></p>
+                    <p id="temp_max">Temperatura máxima: <span></span></p>
+                    <p id="temp_min">Temperatura mínima: <span></span></p>
+                    <p id="tiempo">Descripción: <span></span> <img src=""></p>
+                    <p id="wind_speed">Velocidad del viento: <span></span></p>
+                    <p id="wind_direction">Dirección del viento: <span></span></p>
+                </div>
                 <div class="container-button">
                     <button class="custom-button" type="submit">Comprobar</button>
                 </div>
@@ -39,7 +45,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="{{asset('js/main.js') }}"></script>
+<script src="{{asset('js/main.min.js') }}"></script>
 
 
 

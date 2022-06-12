@@ -13,6 +13,16 @@ html,body {
 }
 
 .main-block {
+
+    .content-loaded{
+        margin-top: 25px;
+        text-align: left;
+        p{
+            color: #FFFFFF;
+            font-size: 12px;
+        }
+    }
+
     .title-description {
         text-align: center;
 
@@ -31,7 +41,7 @@ html,body {
         max-width: 330px;
         padding: 15px;
         margin: 0 auto;
-        min-height: 350px;
+        min-height: 550px;
         position: relative;
 
         input::-webkit-outer-spin-button,
@@ -113,6 +123,7 @@ html,body {
     margin-top: auto;
     position: fixed;
     bottom: 0;
+    left: 0;
     width: 100%;
     .footer_block{
         p{

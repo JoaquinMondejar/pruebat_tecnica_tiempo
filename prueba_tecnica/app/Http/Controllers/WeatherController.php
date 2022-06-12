@@ -20,7 +20,7 @@ class WeatherController extends Controller
         $lat_lon = $this->getPositionByCP($user_cp);
 
         // Realizamos petición a la URL de la api con las coordenadas recuperadas previamente
-        $response = Http::get('https://api.openweathermap.org/data/2.5/weather?lat='.$lat_lon['lat'].'&lon='.$lat_lon['lon'].'&appid='.$this->api_key)->json();
+        $response = Http::get('https://api.openweathermap.org/data/2.5/weather?lat='.$lat_lon['lat'].'&lon='.$lat_lon['lon'].'&appid='.$this->api_key.'&units=metric')->json();
 
         return $response;
     }
