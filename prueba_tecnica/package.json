@@ -10,6 +10,10 @@
         "production": "mix --production"
     },
     "devDependencies": {
+        "@babel/cli": "^7.17.10",
+        "@babel/core": "^7.18.2",
+        "@babel/preset-env": "^7.18.2",
+        "@babel/preset-react": "^7.17.12",
         "axios": "^0.25",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",

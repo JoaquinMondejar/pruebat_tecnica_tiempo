@@ -1,0 +1,125 @@
+html,body {
+    background-color: #333;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 15px;
+}
+
+.header-block{
+    text-align: center;
+    .title-home{
+        font-size: 24px;
+        color: #FFFFFF;
+    }
+}
+
+.main-block {
+    .title-description {
+        text-align: center;
+
+        p {
+            color: #FFFFFF;
+            font-size: 18px;
+        }
+
+        p.subtitle{
+            font-size: 14px;
+        }
+    }
+
+    #cp_submit {
+        width: 100%;
+        max-width: 330px;
+        padding: 15px;
+        margin: 0 auto;
+        min-height: 350px;
+        position: relative;
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+        input {
+            outline: none;
+            position: relative;
+            box-sizing: border-box;
+            height: auto;
+            padding: 10px;
+            font-size: 16px;
+
+            width: 100%;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            overflow: visible;
+            margin: 0;
+            font-family: inherit;
+        }
+
+        .container-button{
+            padding: 15px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            max-width: 300px;
+
+            .custom-button{
+                background-image: linear-gradient(45deg,#4568dc,#b06ab3);
+                border: 5em;
+                cursor: pointer;
+                outline: none;
+                font-size: 16px;
+                transform: translate(0);
+                padding: 0.7em 2em;
+                border-radius: 65px;
+                box-shadow: 1px 1px 10px hsl(0deg 0% 100% / 44%);
+                transition: box-shadow .25s;
+                color: #fff;
+            }
+
+            .custom-button:after{
+                content: "";
+                border-radius: 18px;
+                position: absolute;
+                margin: 4px;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                z-index: -1;
+                background: #0e0e10;
+            }
+
+            .custom-button:hover {
+                box-shadow: 0 12px 24px hsl(0deg 0% 50% / 10%);
+            }
+        }
+
+    }
+}
+
+
+
+
+.footer_custom{
+    text-align: center;
+    margin-top: auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    .footer_block{
+        p{
+            color: #ffffff80;
+            span{
+                color: #FFFFFF;
+            }
+        }
+    }
+}

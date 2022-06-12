@@ -1,0 +1,108 @@
+html, body {
+  background-color: #333;
+  font-family: "Nunito", sans-serif;
+  margin-top: 15px;
+}
+
+.header-block {
+  text-align: center;
+}
+.header-block .title-home {
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.main-block .title-description {
+  text-align: center;
+}
+.main-block .title-description p {
+  color: #FFFFFF;
+  font-size: 18px;
+}
+.main-block .title-description p.subtitle {
+  font-size: 14px;
+}
+.main-block #cp_submit {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+  min-height: 350px;
+  position: relative;
+}
+.main-block #cp_submit input::-webkit-outer-spin-button,
+.main-block #cp_submit input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.main-block #cp_submit input[type=number] {
+  -moz-appearance: textfield;
+}
+.main-block #cp_submit input {
+  outline: none;
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  overflow: visible;
+  margin: 0;
+  font-family: inherit;
+}
+.main-block #cp_submit .container-button {
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-width: 300px;
+}
+.main-block #cp_submit .container-button .custom-button {
+  background-image: linear-gradient(45deg, #4568dc, #b06ab3);
+  border: 5em;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  transform: translate(0);
+  padding: 0.7em 2em;
+  border-radius: 65px;
+  box-shadow: 1px 1px 10px hsla(0deg, 0%, 100%, 0.44);
+  transition: box-shadow 0.25s;
+  color: #fff;
+}
+.main-block #cp_submit .container-button .custom-button:after {
+  content: "";
+  border-radius: 18px;
+  position: absolute;
+  margin: 4px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background: #0e0e10;
+}
+.main-block #cp_submit .container-button .custom-button:hover {
+  box-shadow: 0 12px 24px hsla(0deg, 0%, 50%, 0.1);
+}
+
+.footer_custom {
+  text-align: center;
+  margin-top: auto;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.footer_custom .footer_block p {
+  color: rgba(255, 255, 255, 0.5019607843);
+}
+.footer_custom .footer_block p span {
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=main.css.map */
